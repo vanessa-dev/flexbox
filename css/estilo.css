@@ -1,0 +1,117 @@
+﻿/*---Reset----*/
+*{margin:0;padding:0; box-sizing: border-box;}
+ul{list-style:none;}
+a{text-decoration: none;font-weight: bold;}
+
+
+/*---Cabecalho----*/
+.cabecalho{display: flex;flex-direction: column;}
+.logo{align-self: center; font-size:0;margin-top:2% ;margin-bottom: 2%;}
+.menu{margin-bottom: 2%;align-self: center;width: 80%;}
+.menu ul li{ margin-bottom: 3%;margin-top: 3%; background-color: #000;padding: 5px;font-family: 'Open Sans', sans-serif;border:1px solid black;text-align: center;width: 25%; font-size:1.1em;border-radius:2px;font-weight: 400;}
+.menu ul li a{color:#fff;}
+.menu ul li:hover{padding: 2%;}
+.menu ul li a:hover{text-decoration: underline;}
+
+/*@mediaquery*/
+@media(min-width:800px){
+    .cabecalho{flex-direction: row;justify-content: space-around;align-items: center; }
+    .menu{width: 25%;}
+    .menu ul{display: flex;align-items: baseline;}
+    .logo{align-self: center;}
+    .menu ul li{margin-left: 1%;margin-right: 2%;padding: 2%;}
+    
+}
+   
+/*---Descriçao/parallaxtopo----*/
+.descricao{
+background-image: url(../img/film-1668918_1280.jpg);background-size: cover;min-height: 38vh; color:#fff;display:flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;
+}
+.descricao .texto{font-family: 'Open Sans', sans-serif;font-size:1.5em;}
+@media(min-width:800px){
+    .descricao{min-height: 85vh;}
+}
+
+
+/*---Sobre----*/
+#sobre { color:#191c03;margin-top: 2%;margin-bottom: 1%;}
+.container{display:flex;flex-direction: column;justify-content:  space-between;align-items: center; margin:0px auto;}
+.container .texto .title h3{font-family: 'Roboto Condensed', sans-serif;font-size:2em; text-align: center;font-weight: 700; margin-bottom: 2%;margin-top: 2%;}
+.container .texto p{font-family: 'Roboto Condensed', sans-serif; font-size:1.2em;padding: 0 1%;text-align: justify;margin-bottom: 2%;}
+.container img{border:1px solid #191c03; width: 99%;display: flex;align-items: center;}
+
+/*@mediaquery*/
+
+
+@media(min-width:800px){
+    .container{flex-direction: row;}
+    .container .texto .title h3{margin-top: 5%;margin-bottom: 5%;}
+    .container .foto img{width: 435px;margin-left: 1%;}
+    .container .foto{width: 35%;}
+    .container .texto{width:42%;align-self: center;margin-right: 1%;}
+}
+@media(min-width:1036px){
+    .container .foto img{margin-left: 8%;}
+    .container .texto{margin-right: 8%;}
+}
+/*---Galeria----*/
+
+
+#galeria{color:#fff;padding-top: 1%;background: #002855;;}
+#galeria .fotos img{ width:100%; }
+
+#galeria h3{font-size:0;}
+.fotos{display: flex;flex-direction: column;justify-content: center;}
+.fotos img{margin-bottom: 4px;}
+/*@mediaquery*/
+
+@media(min-width:800px){
+    .fotos{flex-direction: row;margin-left: 3%;margin-right: 3%;}
+    .fotos img{width: 80%; height: 250px;}
+    .fotos .col1{margin-right: 2%;}
+    .fotos .col3{margin-left: 2%;}
+}
+/*---Paralax----*/
+.parallax{display: flex;flex-direction: column;align-items: center;justify-content: center;background: url(../img/praia.jpg);height: 425px;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;display: flex;}
+.parallax .text{ width:80%;height: 200px; margin: 20% 0 ;border-radius:2px;text-align: justify;font-weight: bold;}
+.parallax .text h3{font-family: 'Roboto Condensed', sans-serif; font-size: 0px;color:#fff;}
+/*@mediaquery*/
+@media(max-width:370px){
+    .parallax .text{margin-top: 7%;font-size:18px;}
+}
+@media(min-width:800px){
+    .parallax .text{margin:8% auto;font-size:20px}
+}
+/*---Contatos-----*/
+#contatos {margin:0 auto;font-weight: 400;background: #A7A8A9; color:#FFF; }
+#contatos .title h3{font-family: 'Roboto Condensed', sans-serif;font-weight: 700; text-align: center;font-size: 2em;padding-bottom: 2%;padding-top: 2%;}
+.container2{font-family: 'Roboto Condensed', sans-serif;font-size:19px;}
+.container2 form{display: flex;flex-direction: column;border:2px solid #F1F1F1; width: 380px;height: 100%;margin: 0 auto;margin-bottom: 3%;}
+.container2 input{height: 35px;border:1px solid #ccc;margin-left: 2%;margin-right: 2%;border-radius:2px;}
+.container2 label{margin-left: 3%;margin-right: 3%;font-size: 1.1em;}
+.container2 textarea{height: 130px;border:1px solid #ccc;margin-left: 2%;margin-right: 2%;border-radius:2px;}
+.container2 .button{background: #F6F6F6;color:#000;margin-top: 3%;padding-bottom: 3%; height: 40px;width: 150px;border-radius: 2px;align-self: flex-end;}
+/*---Contatos/informacoes-----*/
+.container2 .informacoes{margin: 0 auto; padding: 2%; display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.container2 .informacoes iframe{border: 2px solid #F1F1F1;}
+.container2 .informacoes .text { font-size:1.1em;align-self: center;padding-top: 2%;}
+.container2 .informacoes .text .center{text-align: center;}
+@media(max-width:370px){
+    .container2 form{width: 100%;}
+    .container2 .informacoes iframe{width: 100%;}
+    
+}
+@media(min-width:800px)and(max-width:1035px){
+    .container2{display:flex;align-items: center; }
+    .container2 form{width:40%;}
+    .container2 .informacoes{width: 40%;}
+    
+}
+@media(min-width:1036px){
+    .container2{display:flex;align-items: center; }
+    .container2 form{width:445px;}
+    .container2 .informacoes{width: 445px;}
+}
+/*---Footer-----*/
+.footer{text-align: center;font-family: 'Open Sans', sans-serif;font-size: 1.1em;letter-spacing: 2px;background: #000;color:#F1F1F1; padding-top: 1%;}
+.footer a{color:#F1F1F1;padding-top: 1%;}
