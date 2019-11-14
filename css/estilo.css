@@ -74,7 +74,7 @@ background-image: url(../img/film-1668918_1280.jpg);background-size: cover;min-h
 /*---Paralax----*/
 .parallax{display: flex;flex-direction: column;align-items: center;justify-content: center;background: url(../img/praia.jpg);height: 425px;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;display: flex;}
 .parallax .text{ width:80%;height: 200px; margin: 20% 0 ;border-radius:2px;text-align: justify;font-weight: bold;}
-.parallax .text h3{font-family: 'Roboto Condensed', sans-serif; font-size: 0px;color:#fff;}
+.parallax .text h3{font-family: 'Roboto Condensed', sans-serif; font-size: 1.5em;color:#fff;}
 /*@mediaquery*/
 @media(max-width:370px){
     .parallax .text{margin-top: 7%;font-size:18px;}
